@@ -1,0 +1,10 @@
+%header
+#main
+  %h2 Welcome aboard!
+  %canvas#bball{:width => '1000px', :height => '500px'}Only for html5 adapted browsers
+  -@sliders.each do |id|
+    .box
+      %label{:for => id}= "#{id}:"
+      %input{:id => id, :type => 'text', :style => "color:#F6931F;font-weight:bold"}
+      %span.slider{:id => id}
+%footer
