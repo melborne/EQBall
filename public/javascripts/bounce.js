@@ -12,7 +12,7 @@ var x = ball.radius, y = ball.radius;
 var bg_alpha = 1.0;
 
 $(document).ready(function(){
-  canvas.self = $("canvas#bball");
+  canvas.self = $("canvas#bounce");
   canvas.ctx = canvas.self[0].getContext('2d');
   canvas.width = canvas.self.width();
   canvas.height = canvas.self.height();
@@ -39,9 +39,9 @@ $(document).ready(function(){
     }
   });
   
-  $(".slider#trail").slider({ min: 0, max: 100, value: bg_alpha*100,
+  $(".slider#trail").slider({ min: 0, max: 10, value: bg_alpha*10,
     slide: function(event, ui){
-      bg_alpha = ui.value/100;
+      bg_alpha = ui.value/10;
       label($(this), ui);
      }
   });
@@ -96,7 +96,7 @@ function bounce (ball) {
 
 function fadeToClear (alpha) {
   var ctx = canvas.ctx;
-  ctx.fillStyle = rgba(255,255,255,alpha);
+  ctx.fillStyle = rgba(255,255,240,alpha);
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 

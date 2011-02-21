@@ -1,6 +1,6 @@
 $font_color: #D0FFD0;
 $bg_color: #325F82;
-$canvas_color: #FFFFFF;
+$canvas_color: rgb(255,255,240);
 
 * {
   margin: 0;
@@ -20,7 +20,8 @@ header {
 }
 
 #main {
-  canvas#bball {
+  h2 { margin-bottom: 5px; }
+  canvas#bounce {
     border: thin solid #444;
     background-color: $canvas_color;
     margin-bottom: 10px;
@@ -38,16 +39,16 @@ header {
     .slider {
       height: 120px;
       float: left;
-      margin:20px
+      margin:20px 20px 40px 20px;
     }
   }
 }
 
 footer {
+  clear: both;
   display: block;
-  height: 30px;
+  height: 50px;
   text-align: center;
-  margin-top: 20px;
   a {
     text-decoration: none;
     color: $font_color;

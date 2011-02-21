@@ -12,14 +12,6 @@ get '/' do
   haml :index
 end
 
-before do
-  
-end
-
-helpers do
-
-end
-
 get '/style.css' do
   scss :style
 end
