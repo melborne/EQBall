@@ -3,7 +3,7 @@ require 'haml'
 require 'sass'
 
 configure do
-  APP_TITLE = "BounceBall"
+  APP_TITLE = "EQBall"
   CREDIT = ['hp12c', "http://d.hatena.ne.jp/keyesberry"]
 end
 

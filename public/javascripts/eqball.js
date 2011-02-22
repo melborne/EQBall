@@ -12,7 +12,7 @@ var x = ball.radius, y = ball.radius;
 var bg_alpha = 1.0;
 
 $(document).ready(function(){
-  canvas.self = $("canvas#bounce");
+  canvas.self = $("canvas#eqball");
   canvas.ctx = canvas.self[0].getContext('2d');
   canvas.width = canvas.self.width();
   canvas.height = canvas.self.height();
