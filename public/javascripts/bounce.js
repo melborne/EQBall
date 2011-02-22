@@ -4,8 +4,8 @@ var ball = {
   radius : 35,
   x : 50,
   y : 50,
-  spx : 20,
-  spy : 20,
+  spx : 10,
+  spy : 10,
   color : 'rgba(30,30,30,1)'
 };
 var x = ball.radius, y = ball.radius;
@@ -17,7 +17,7 @@ $(document).ready(function(){
   canvas.width = canvas.self.width();
   canvas.height = canvas.self.height();
   
-  setInterval(function(){ bounce(ball) }, 40);
+  setInterval(function(){ bounce(ball) }, 20);
 
   $(".slider").slider({ orientation: 'vertical', range: 'min' });
   
@@ -28,7 +28,7 @@ $(document).ready(function(){
     }
   });
   
-  $(".slider#spx,.slider#spy").slider({ min: 5, max: 50, value: ball.spx,
+  $(".slider#spx,.slider#spy").slider({ min: 5, max: 40, value: ball.spx,
     slide: function(event, ui){
       if ($(this).attr('id')!='spy') {
         ball.spx = ball.spx > 0 ? ui.value : -ui.value;
