@@ -8,7 +8,6 @@ configure do
 end
 
 get '/' do
-  @sliders = %w(size spx spy trail red green blue alpha)
   haml :index
 end
 
